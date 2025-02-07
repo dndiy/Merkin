@@ -7,16 +7,16 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Greg Aster',
-  subtitle: 'Experimental Videographer & Creator',
+  title: 'Merkin',
+  subtitle: 'Meta-Human Pre-Singularity Hybrid',
   lang: 'en',
   themeColor: {
-    hue: 200,
+    hue: 270, // Deep violet, otherworldly glow
     fixed: false,
   },
   banner: {
     enable: true,
-    src: 'assets/images/banner.png',
+    src: 'assets/images/Banner-Dark.jpg', // Replace with a fitting cosmic horror image
     position: 'center',
     credit: {
       enable: false,
@@ -25,45 +25,46 @@ export const siteConfig: SiteConfig = {
     }
   },
   toc: {
-    enable: true,
+    enable: false, // Mystery doesn't require a table of contents
     depth: 2
   },
-  favicon: [    // Leave this array empty to use the default favicon
-    //{
-      //src: '/favicon/mascot-180.png',    // Path of the favicon, relative to the /public directory
-      //theme: 'dark',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-      //sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
-     //}
-]
+  favicon: [//
+   // {
+     // src: '/favicon/merkin-dark.png',
+     // theme: 'dark',
+     // sizes: '32x32',
+  //  }
+  ]
 }
 
 export const navBarConfig: NavBarConfig = {
   links: [
     LinkPreset.Home,
-    LinkPreset.Archive,
-    LinkPreset.About,
     {
-      name: 'YouTube',
-      url: 'https://www.youtube.com/dndiy',
-      external: true,
+      name: 'Codex',
+      url: '/codex', // A cryptic lore page
+    },
+    {
+      name: 'Oracles',
+      url: '/oracles', // Perhaps a contact page, but in a weird, cosmic way
     },
   ],
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/avatar.png',
-  name: 'Greg Aster',
-  bio: 'Filmmaker, Animator, and Creator of Strange Worlds',
+  avatar: 'assets/images/avatar-dark.png', // A surreal or disturbing image
+  name: 'Merkin',
+  bio: 'Echoes from the void. A being between realities.',
   links: [
     {
-      name: 'Bluesky',
+      name: 'Transmissions',
       icon: 'fa6-brands:bluesky',
-      url: 'https://bsky.app/profile/astervisualarts.bsky.social',
+      url: '/transmissions', // A log of cryptic messages or lore entries
     },
     {
-      name: 'Discord',
+      name: 'The Singularity Looms',
       icon: 'fa6-brands:discord',
-      url: 'https://discord.gg/e69ZEcnY',
+      url: '/singularity', // Perhaps a countdown or a strange prophecy
     },
     {
       name: 'GitHub',
@@ -74,8 +75,6 @@ export const profileConfig: ProfileConfig = {
 }
 
 export const licenseConfig: LicenseConfig = {
-  enable: true,
-  name: 'CC BY-NC-SA 4.0',
-  url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+  enable: false, // No mortal laws apply to Merkin
 }
 
